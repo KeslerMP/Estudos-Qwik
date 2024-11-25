@@ -5,7 +5,7 @@
  * Usa parâmetro de rota [id] para identificar o item.
  */
 
-import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
+import { component$, useSignal, useVisibleTask$, $ } from '@builder.io/qwik';
 import { useNavigate, useLocation, type DocumentHead } from '@builder.io/qwik-city';
 import { getItemById, deleteItem, type Item } from '~/lib/supabase/catalog';
 import { Toast, type ToastMessage } from '~/components/toast/toast';
@@ -38,7 +38,7 @@ export default component$(() => {
     loading.value = false;
   });
 
-  const handleDelete = async () => {
+  const handleDelete = $(async () => {
     if (deleting.value) return;
 
     deleting.value = true;
@@ -53,7 +53,7 @@ export default component$(() => {
         nav('/');
       }, 1500);
     }
-  };
+  });
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('pt-BR', {

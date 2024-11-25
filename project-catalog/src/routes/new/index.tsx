@@ -31,7 +31,7 @@ export default component$(() => {
               if (submitting.value) return;
 
               submitting.value = true;
-              const { data: item, error } = await createItem(data);
+              const { error } = await createItem(data);
 
               if (error) {
                 toast.value = { message: `Erro ao criar produto: ${error}`, type: 'error' };
