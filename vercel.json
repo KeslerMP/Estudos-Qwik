@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd project-catalog && pnpm install && pnpm build",
-  "outputDirectory": "project-catalog/dist",
-  "installCommand": "cd project-catalog && pnpm install",
-  "framework": null
-}
