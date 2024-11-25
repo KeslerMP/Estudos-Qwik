@@ -38,13 +38,13 @@ export interface Database {
   };
 }
 
-let supabaseClient: SupabaseClient<Database> | null = null;
+let supabaseClient: SupabaseClient | null = null;
 
 /**
  * Obtém ou cria uma instância do cliente Supabase
  * Esta função garante que apenas uma instância do cliente seja criada (singleton)
  */
-export const getSupabaseClient = (): SupabaseClient<Database> => {
+export const getSupabaseClient = (): SupabaseClient => {
   if (supabaseClient) {
     return supabaseClient;
   }
@@ -59,6 +59,6 @@ export const getSupabaseClient = (): SupabaseClient<Database> => {
     );
   }
 
-  supabaseClient = createClient<Database>(supabaseUrl, supabaseKey);
+  supabaseClient = createClient(supabaseUrl, supabaseKey);
   return supabaseClient;
 };

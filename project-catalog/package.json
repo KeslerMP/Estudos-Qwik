@@ -2,6 +2,7 @@
   "name": "project-catalog",
   "description": "Sistema de catálogo CRUD com Qwik + Supabase",
   "version": "0.0.1",
+  "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
