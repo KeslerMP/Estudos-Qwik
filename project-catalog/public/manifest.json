@@ -1,0 +1,16 @@
+{
+  "name": "Catálogo de Produtos",
+  "short_name": "Catálogo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5e9",
+  "description": "Sistema de catálogo de produtos com Qwik e Supabase",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
