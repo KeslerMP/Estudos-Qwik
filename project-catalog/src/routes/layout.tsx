@@ -64,7 +64,7 @@ export default component$(() => {
           <div class="flex flex-col items-center gap-4">
             {/* GitHub Profile */}
             <a
-              href="https://github.com/u/99407881"
+              href="https://github.com/KeslerMP"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center gap-3 text-gray-700 hover:text-primary-600 transition-colors group"
