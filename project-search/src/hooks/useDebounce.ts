@@ -3,6 +3,7 @@ import { useSignal, useVisibleTask$, type Signal } from '@builder.io/qwik';
 export function useDebounce<T>(value: Signal<T>, delay: number = 500): Signal<T> {
   const debouncedValue = useSignal<T>(value.value);
 
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(({ track, cleanup }) => {
     track(() => value.value);
 

@@ -42,6 +42,8 @@ export default component$(() => {
                     <img
                       src={product.image_url}
                       alt={product.name}
+                      width="400"
+                      height="400"
                       class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
