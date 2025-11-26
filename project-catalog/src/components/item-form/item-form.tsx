@@ -125,6 +125,8 @@ export const ItemForm = component$<ItemFormProps>(
               <img
                 src={imagePreview.value}
                 alt="Preview"
+                width={128}
+                height={128}
                 class="w-32 h-32 object-cover rounded-lg border-2 border-gray-200"
               />
               <button
