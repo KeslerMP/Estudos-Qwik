@@ -33,6 +33,19 @@ export const ItemCard = component$<ItemCardProps>(({ item, onEdit$, onDelete$ })
 
   return (
     <div class="card hover:shadow-lg transition-shadow duration-200">
+      {/* Imagem do Produto */}
+      {item.image_url && (
+        <div class="mb-4 -mx-6 -mt-6">
+          <img
+            src={item.image_url}
+            alt={item.name}
+            class="w-full h-48 object-cover rounded-t-lg"
+            width="400"
+            height="192"
+          />
+        </div>
+      )}
+
       <div class="flex justify-between items-start mb-4">
         <div class="flex-1">
           <h3 class="text-xl font-semibold text-gray-900 mb-2">{item.name}</h3>
