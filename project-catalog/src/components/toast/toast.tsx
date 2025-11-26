@@ -21,6 +21,7 @@ export const Toast = component$<ToastProps>(({ toast }) => {
   const visible = useSignal(false);
 
   // Controla a visibilidade e auto-fechamento do toast
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(({ track, cleanup }) => {
     track(() => toast.value);
 

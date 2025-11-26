@@ -28,6 +28,7 @@ export default component$(() => {
   const PAGE_SIZE = 9;
 
   // Carrega itens quando o componente é montado ou quando a página/busca muda
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(({ track }) => {
     track(() => currentPage.value);
     track(() => searchTerm.value);

@@ -72,6 +72,8 @@ export default component$(() => {
               <img
                 src="https://avatars.githubusercontent.com/u/99407881?v=4"
                 alt="GitHub Profile"
+                width="40"
+                height="40"
                 class="w-10 h-10 rounded-full border-2 border-gray-200 group-hover:border-primary-500 transition-colors"
               />
               <div class="flex items-center gap-2">

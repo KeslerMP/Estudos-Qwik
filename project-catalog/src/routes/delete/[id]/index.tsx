@@ -22,6 +22,7 @@ export default component$(() => {
   const deleting = useSignal(false);
 
   // Carrega o item ao montar o componente
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(async () => {
     const { data, error: err } = await getItemById(id);
 
