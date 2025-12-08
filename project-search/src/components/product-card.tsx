@@ -20,7 +20,7 @@ export const ProductCard = component$<ProductCardProps>(({
   stock 
 }) => {
   return (
-    <Card class="overflow-hidden hover:shadow-lg transition-shadow">
+    <Card class="overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
       <div class="h-48 bg-muted flex items-center justify-center">
         <span class="text-muted-foreground text-sm">Sem imagem</span>
       </div>
