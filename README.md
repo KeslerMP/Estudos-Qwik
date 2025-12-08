@@ -97,10 +97,10 @@ Sistema completo de gerenciamento de catalogo com operacoes CRUD e upload de ima
 
 ```bash
 cd project-catalog
-npm install
-npm run dev          # Desenvolvimento
-npm run build        # Build para producao
-npm run deploy       # Deploy para Vercel
+pnpm install
+pnpm run dev          # Desenvolvimento
+pnpm run build        # Build para producao
+pnpm run deploy       # Deploy para Vercel
 ```
 
 ## Project Search
@@ -172,10 +172,10 @@ Aplicacao de busca e filtragem de produtos com algoritmo de busca hibrida.
 
 ```bash
 cd project-search
-npm install
-npm run dev          # Desenvolvimento
-npm run build        # Build para producao
-npm run deploy       # Deploy para Vercel
+pnpm install
+pnpm run dev          # Desenvolvimento
+pnpm run build        # Build para producao
+pnpm run deploy       # Deploy para Vercel
 ```
 
 ## Integracao Entre Projetos
