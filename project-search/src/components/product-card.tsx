@@ -22,7 +22,7 @@ export const ProductCard = component$<ProductCardProps>(({
   return (
     <Card class="overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
       <div class="h-48 bg-muted flex items-center justify-center">
-        <span class="text-muted-foreground text-sm">Sem imagem</span>
+        <span class="text-muted-foreground text-sm">Sem imagem kk</span>
       </div>
       <CardContent class="p-4">
         <Badge variant="secondary" class="mb-2">{category}</Badge>
